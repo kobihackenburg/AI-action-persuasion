@@ -1,0 +1,22 @@
+\renewcommand{\arraystretch}{1.2}
+\begin{adjustbox}{max width=\linewidth, center}
+\begingroup\fontsize{10}{12}\selectfont
+
+\begin{tabular}{lrr}
+\toprule
+\textbf{Condition} & \textbf{Proportion NA} & \textbf{Total N}\\
+\midrule
+\cellcolor{gray!15}{Control} & \cellcolor{gray!15}{0.034} & \cellcolor{gray!15}{1759}\\
+Petition-Info & 0.043 & 1736\\
+\cellcolor{gray!15}{Org-Info} & \cellcolor{gray!15}{0.046} & \cellcolor{gray!15}{1709}\\
+Random & 0.040 & 3208\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+
+\end{adjustbox}
+\\[3pt]
+\begin{minipage}{\linewidth}
+\raggedright\footnotesize\textit{Note: Denominator is all randomised participants (\texttt{conversation\_type} assigned at session creation). Post-treatment attrition is defined as failure to complete the study (\texttt{completed = FALSE}). This includes participants who dropped out at any point after randomisation.}
+\end{minipage}
+

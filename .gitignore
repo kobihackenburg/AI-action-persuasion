@@ -1,0 +1,9 @@
+# Unredacted data (drop full CSVs here to override redacted defaults)
+data/raw/full/
+
+# OS / editor artifacts
+.DS_Store
+.Rhistory
+
+# Redaction script (not needed by users)
+redact_data.py
