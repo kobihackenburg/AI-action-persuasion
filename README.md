@@ -1,14 +1,16 @@
 # Artificial Intelligence Can Persuade People to Take Political Actions
 
 ```bibtex
-@misc{hackenburg2026actionpersuasion,
-      title={Artificial intelligence can persuade people to take political actions}, 
-      author={Kobi Hackenburg and Luke Hewitt and Caroline Wagner and Christopher Summerfield and Ben M. Tappin},
-      year={2026},
-      eprint={2604.09200},
-      archivePrefix={arXiv},
-      primaryClass={cs.CY},
-      url={https://arxiv.org/abs/2604.09200}, 
+@article{hackenburg2026actionpersuasion,
+  title   = {{AI} can persuade people to take political actions},
+  author  = {Hackenburg, Kobi and Hewitt, Luke and Wagner, Caroline and Summerfield, Christopher and Tappin, Ben M.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {123},
+  number  = {42},
+  pages   = {e2611368123},
+  year    = {2026},
+  doi     = {10.1073/pnas.2611368123},
+  url     = {https://doi.org/10.1073/pnas.2611368123}
 }
 ```
 
