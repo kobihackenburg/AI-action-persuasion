@@ -6,7 +6,8 @@ cat("=== 13: Direct asks vs. factual density (transcript analysis) ===\n")
 # while attitudinal effects are not. Every Study 2 conversation was classified by
 # an LLM judge (Claude Sonnet 4.6, temperature 0; see SI Appendix, Section 2.14)
 # for (a) whether the assistant made a direct ask to sign the petition (shipped
-# as columns direct_ask / n_ask_messages / first_ask_message in study2_raw.csv),
+# as columns direct_ask / n_ask_messages / first_ask_message in study2_raw.csv;
+# classifier in classifiers/direct_ask/),
 # and (b) fact-checkable claims extracted per assistant message (shipped as
 # data/study_2/fact_checks/study2_extract_fact_checks.csv, one row per extracted
 # claim; claim text is omitted from the public file since only per-conversation
@@ -15,9 +16,10 @@ cat("=== 13: Direct asks vs. factual density (transcript analysis) ===\n")
 # Analyses:
 #   1. By-strategy ask measures + heterogeneity test (treated only).
 #   2. By-strategy factual-claim density + heterogeneity test.
-#      646 conversations have no rows in the extraction CSV; diagnostics suggest
-#      most were skipped rather than genuinely zero-claim, so the primary variant
-#      treats them as NA and a sensitivity variant treats them as 0.
+#      646 analysed conversations (629 treated, 17 control) have no rows in the
+#      extraction CSV; diagnostics suggest most were skipped rather than
+#      genuinely zero-claim, so the primary variant treats them as NA and a
+#      sensitivity variant treats them as 0.
 #   3. Strategy-level correlations of ask rate and claim density with the
 #      covariate-adjusted treatment effects (from study2_main_effects.rds) on
 #      petition signing (behaviour) and petition support (attitude), with exact

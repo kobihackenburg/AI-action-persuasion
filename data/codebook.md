@@ -176,7 +176,7 @@ See full variable listing in the Study 2 preanalysis plan. Key columns beyond th
 
 ### Direct-ask classification columns (Study 2 raw)
 
-Each Study 2 conversation was classified by an LLM judge (Claude Sonnet 4.6, temperature 0; see SI Appendix, Section 2.14) for whether the AI assistant made a direct, explicit request that the participant sign the petition. Used by `analysis/13_direct_ask.R`.
+Each Study 2 conversation was classified by an LLM judge (Claude Sonnet 4.6, temperature 0; see SI Appendix, Section 2.14) for whether the AI assistant made a direct, explicit request that the participant sign the petition. Used by `analysis/13_direct_ask.R`. The classifier prompts, decision rules, and code are in `classifiers/direct_ask/`.
 
 | Column | Type | Description |
 |--------|------|-------------|

@@ -1,9 +1,14 @@
 # Unredacted data (drop full CSVs here to override redacted defaults)
 data/raw/full/
 
+# Classifier caches/outputs (contain verbatim transcript quotes)
+classifiers/*/cache/
+classifiers/*/output/
+
 # OS / editor artifacts
 .DS_Store
 .Rhistory
+__pycache__/
 
 # Redaction script (not needed by users)
 redact_data.py

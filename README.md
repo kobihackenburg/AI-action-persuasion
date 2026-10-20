@@ -19,6 +19,8 @@
 
 ```
 analysis/              R scripts (00-14) + figure/table generators
+classifiers/
+  direct_ask/          LLM classifier for direct asks to sign (prompts + code; SI Section 2.14)
   figures/             main/ (3 figures) and si/ (9 figures, 4 tables)
   run_all.R            Master script: data processing -> analysis -> figures
   utils.R              Shared helpers and data path resolver
@@ -48,4 +50,4 @@ Required packages: `tidyverse`, `lme4`, `broom`, `broom.mixed`, `jsonlite`, `met
 
 Participant IDs are anonymized and conversation transcripts are redacted. All other variables (demographics, outcomes, mechanisms, etc.) are unchanged. See `data/codebook.md` for full variable definitions.
 
-The transcript-classification outputs used by `13_direct_ask.R` (direct-ask columns in `study2_raw.csv` and the fact-check claim file in `data/study_2/fact_checks/`) are provided as data. The classification pipeline itself (LLM judge: Claude Sonnet 4.6, temperature 0; see SI Appendix, Section 2.14) is not included, as it requires unredacted transcripts and API credentials to run.
+The transcript-classification outputs used by `13_direct_ask.R` (direct-ask columns in `study2_raw.csv` and the fact-check claim file in `data/study_2/fact_checks/`) are provided as data. The direct-ask classifier (LLM judge: Claude Sonnet 4.6, temperature 0; see SI Appendix, Section 2.14) is in [`classifiers/direct_ask/`](classifiers/direct_ask/), including the exact prompts and decision rules. Running it requires the unredacted transcripts, which are not public.
